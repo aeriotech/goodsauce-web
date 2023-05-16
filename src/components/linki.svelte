@@ -23,7 +23,7 @@
 <style>
     .linki{
         display: flex;
-        align-items: center;
+        
         justify-content: center;
     }
     .space {
