@@ -37,7 +37,7 @@
         position: relative;
         align-items: center;
         justify-content: center;
-        font-family: "Mersad";
+        font-family: 'Mersad', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 25px;
@@ -54,7 +54,7 @@
         position: relative;
         align-items: center;
         justify-content: center;
-        font-family: "Mersad";
+        font-family: 'Mersad', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 18px;

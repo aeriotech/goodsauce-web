@@ -25,10 +25,7 @@
 </div>
 
 <style>
-    .space {
-        width: 38px;
-    }
-
+    
     .title {
         display: flex;
         justify-content: center;
@@ -43,7 +40,7 @@
     }
     .napis {
         margin-top: 50px;
-        font-family: "Mersad";
+        font-family: 'Mersad', sans-serif;
         font-style: SemiBold;
         font-weight: 600;
         font-size: 35px;
@@ -101,7 +98,7 @@
         }
         .napis {
             margin-top: 50px;
-            font-family: "Mersad";
+            font-family: 'Mersad', sans-serif;
             font-style: SemiBold;
             font-weight: 600;
             font-size: 25px;

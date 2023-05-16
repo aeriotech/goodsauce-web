@@ -31,4 +31,6 @@
 		overflow: hidden;
 	}
 	@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+	@import url('https://fonts.cdnfonts.com/css/mersad');
+	@import url('https://fonts.cdnfonts.com/css/pitch-display');
 </style>

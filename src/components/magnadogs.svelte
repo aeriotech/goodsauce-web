@@ -15,7 +15,7 @@
 
 <style>
     .collab {
-        font-family: "Mersad";
+        font-family: 'Mersad', sans-serif;
         font-style: normal;
         font-weight: 800;
         font-size: 15px; 
