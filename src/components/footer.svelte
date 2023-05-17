@@ -22,6 +22,7 @@
         line-height: 24px;
 
         color: #101010;
+        font-display: swap;
     }
     .space {
         display: flex;

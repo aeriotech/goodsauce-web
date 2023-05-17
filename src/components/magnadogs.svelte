@@ -25,6 +25,7 @@
         text-transform: uppercase;
 
         color: #f8c418;
+        font-display: swap;
     }
     .sponzorji {
         display: flex;

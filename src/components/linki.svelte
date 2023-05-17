@@ -48,6 +48,7 @@
         letter-spacing: 0.2em;
 
         color: #f8c418;
+        font-display: swap;
     }
     @media only screen and (max-width: 600px) {
         .text {
@@ -65,6 +66,7 @@
         letter-spacing: 0.2em;
 
         color: #f8c418;
+        font-display: swap;
     }
     .space {
         display: flex;
