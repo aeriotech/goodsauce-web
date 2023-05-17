@@ -41,12 +41,13 @@
     .napis {
         margin-top: 50px;
         font-family: 'Mersad', sans-serif;
-        font-style: SemiBold;
+        
         font-weight: 600;
         font-size: 35px;
         line-height: 40px;
 
         color: #f8c418;
+        font-display: swap;
     }
     .header {
         display: flex;
@@ -99,12 +100,13 @@
         .napis {
             margin-top: 50px;
             font-family: 'Mersad', sans-serif;
-            font-style: SemiBold;
+            
             font-weight: 600;
             font-size: 25px;
             line-height: 40px;
 
             color: #f8c418;
+            font-display: swap;
         }
         .title {
             display: flex;
