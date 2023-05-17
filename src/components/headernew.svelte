@@ -36,14 +36,14 @@
         border-left-style: solid;
         color: #f8c418;
         margin-bottom: 1px;
-        margin-top: 43px;
+        margin-top: 54px;
     }
     .napis {
-        margin-top: 50px;
+        margin-top: 63px;
         font-family: 'Mersad', sans-serif;
-        
+        letter-spacing: 0.055em;
         font-weight: 600;
-        font-size: 35px;
+        font-size: 30px;
         line-height: 40px;
 
         color: #f8c418;
@@ -95,14 +95,14 @@
             border-left-style: solid;
             color: #f8c418;
             margin-bottom: 1px;
-            margin-top: 43px;
+            margin-top: 48px;
         }
         .napis {
             margin-top: 50px;
             font-family: 'Mersad', sans-serif;
             
             font-weight: 600;
-            font-size: 25px;
+            font-size: 23px;
             line-height: 40px;
 
             color: #f8c418;
