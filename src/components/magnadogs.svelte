@@ -70,7 +70,7 @@
             width: 220px;
         }
         .slikasponzor {
-            width: 405px;
+            width: 369px;
         }
     }
 </style>
