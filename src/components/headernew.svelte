@@ -1,13 +1,14 @@
 <script>
     import slikaozadnje from "../assets/SPLETNA_GRAFIKA_OZADJE_siroko 1.png";
     import slikaozadnjecomp from "../assets/SPLETNA_GRAFIKA_OZADJE_siroko 1 - Copy-min.png";
+    import slikaozadnjecomp2 from "../assets/SPLETNA_GRAFIKA_OZADJE_siroko 1 - Copy-min-min.png";
     import magnanapis from "../assets/MAGNA_LOGO_PROFFESIONAL.png";
     import linkig from "../assets/iglink.png";
 </script>
 
 <div class="outline">
     <div class="container">
-        <div class="papak" style="background-image: url('{slikaozadnjecomp}'); ">
+        <div class="papak" style="background-image: url('{slikaozadnjecomp2}'); ">
             <div class="header">
                 <img class="magna" src={magnanapis} alt="bb" />
                 <div class="spacer" />
