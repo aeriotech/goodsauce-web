@@ -9,7 +9,7 @@
 <div>
     <div class="space" style="background-image: url('{ozadjepage}');">
         <div>
-            <p class="text">AVALIABLE ON ALL PLATFORMS</p>
+            <p class="text">SOON AVALIABLE ON ALL PLATFORMS</p>
             <div class="linki">
                 <img class="slikalink" src={spotify} alt="bb" />
                 <img class="slikalink" src={apple} alt="bb" />
@@ -21,6 +21,9 @@
 </div>
 
 <style>
+    .slikalink{
+        filter: blur(3px);
+    }
     .linki{
         display: flex;
         align-items: center;
