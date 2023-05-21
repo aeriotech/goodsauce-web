@@ -1,18 +1,18 @@
 <script>
     import levitrak from "../assets/levateste.png";
     import desnitrak from "../assets/DESNATEST.png";
-    import Film1 from "../assets/Slika1.png";
-    import Film2 from "../assets/Slika2.png";
-    import Film3 from "../assets/Slika3.png";
-    import Film4 from "../assets/Slika4.png";
-    import Film5 from "../assets/Slika5.png";
-    import Film6 from "../assets/Slika6.png";
-    import Film1mobi from "../assets/Slika1mobi.png";
-    import Film2mobi from "../assets/Slika2mobi.png";
-    import Film3mobi from "../assets/Slika3mobi.png";
-    import Film4mobi from "../assets/Slika4mobi.png";
-    import Film5mobi from "../assets/Slika5mobi.png";
-    import Film6mobi from "../assets/Slika6mobi.png";
+    import Film1 from "../assets/Slika1-min.png";
+    import Film2 from "../assets/Slika2-min.png";
+    import Film3 from "../assets/Slika3-min.png";
+    import Film4 from "../assets/Slika4-min.png";
+    import Film5 from "../assets/Slika5-min.png";
+    import Film6 from "../assets/Slika6-min.png";
+    import Film1mobi from "../assets/Slika1mobi.webp";
+    import Film2mobi from "../assets/Slika2mobi.webp";
+    import Film3mobi from "../assets/Slika3mobi.webp";
+    import Film4mobi from "../assets/Slika4mobi.webp";
+    import Film5mobi from "../assets/Slika5mobi.webp";
+    import Film6mobi from "../assets/Slika6mobi.webp";
 
 </script>
 

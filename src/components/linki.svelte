@@ -1,6 +1,6 @@
 <script>
     //import ozadjepage from "../assets/SPLETNA_GRAFIKA_OZADJE_brezgrafike.png";
-    import ozadjepagecomp from "../assets/SPLETNA_GRAFIKA_OZADJE_brezgrafike - Copy-min.png";
+    import ozadjepagecomp from "../assets/SPLETNA_GRAFIKA_OZADJE_brezgrafike - Copy-min.webp";
     import spotify from "../assets/Spotify.png";
     import apple from "../assets/Apple Music.png";
     import tiktok from "../assets/TikTok.png";
