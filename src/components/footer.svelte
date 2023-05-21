@@ -1,5 +1,5 @@
 <script>
-    import mrmagna from "../assets/magndadogs_MERCH_DROP_napis.png";
+    //import mrmagna from "../assets/magndadogs_MERCH_DROP_napis.png";
 </script>
 
 <div>

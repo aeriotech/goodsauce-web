@@ -4,6 +4,7 @@
 	import Linki from "./components/linki.svelte";
 	import Magna from "./components/magnadogs.svelte";
 	import Footer from "./components/footer.svelte";
+	
 	import { onMount } from "svelte";
 	/*
 	let loading = true;

@@ -1,6 +1,6 @@
 <script>
     import bimagna from "../assets/MAGNAWEBTEST.png";
-    import parnerji from "../assets/sponsorji1 1.png";
+    //import parnerji from "../assets/sponsorji1 1.png";
     import parnerjiw from "../assets/sponsorji1white.png";
 </script>
 

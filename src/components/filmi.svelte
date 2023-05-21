@@ -13,7 +13,10 @@
     import Film4mobi from "../assets/Slika4mobi.png";
     import Film5mobi from "../assets/Slika5mobi.png";
     import Film6mobi from "../assets/Slika6mobi.png";
+
 </script>
+
+
 
 <div class="outline">
     <div class="space" style="background-image: url('{levitrak}');">
@@ -21,19 +24,19 @@
     </div>
     <div class="box">
         <div class="container">
-            <img class="slikafilm" src={Film1} alt="bb" />
-            <img class="slikafilm" src={Film2} alt="bb" />
-            <img class="slikafilm" src={Film3} alt="bb" />
-            <img class="slikafilm" src={Film4} alt="bb" />
-            <img class="slikafilm" src={Film5} alt="bb" />
-            <img class="slikafilm" src={Film6} alt="bb" />
+            <img class="slikafilm" src={Film1} alt="bb" loading="lazy" />
+            <img class="slikafilm" src={Film2} alt="bb" loading="lazy"/>
+            <img class="slikafilm" src={Film3} alt="bb" loading="lazy"/>
+            <img class="slikafilm" src={Film4} alt="bb" loading="lazy"/>
+            <img class="slikafilm" src={Film5} alt="bb" loading="lazy"/>
+            <img class="slikafilm" src={Film6} alt="bb" loading="lazy"/>
 
-            <img class="slikafilmobi" src={Film1mobi} alt="bb" />
-            <img class="slikafilmobi" src={Film2mobi} alt="bb" />
-            <img class="slikafilmobi" src={Film3mobi} alt="bb" />
-            <img class="slikafilmobi" src={Film4mobi} alt="bb" />
-            <img class="slikafilmobi" src={Film5mobi} alt="bb" />
-            <img class="slikafilmobi" src={Film6mobi} alt="bb" />
+            <img class="slikafilmobi" src={Film1mobi} alt="bb" loading="lazy"/>
+            <img class="slikafilmobi" src={Film2mobi} alt="bb" loading="lazy"/>
+            <img class="slikafilmobi" src={Film3mobi} alt="bb" loading="lazy"/>
+            <img class="slikafilmobi" src={Film4mobi} alt="bb" loading="lazy"/>
+            <img class="slikafilmobi" src={Film5mobi} alt="bb" loading="lazy"/>
+            <img class="slikafilmobi" src={Film6mobi} alt="bb" loading="lazy"/>
         </div>
     </div>
     <div class="space" style="background-image: url('{desnitrak}');" />
@@ -54,7 +57,6 @@
         width: 38px;
     }
     .outline {
-        
         display: flex;
         justify-content: center;
         align-items: stretch;

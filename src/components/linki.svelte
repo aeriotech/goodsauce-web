@@ -1,5 +1,6 @@
 <script>
-    import ozadjepage from "../assets/SPLETNA_GRAFIKA_OZADJE_brezgrafike.png";
+    //import ozadjepage from "../assets/SPLETNA_GRAFIKA_OZADJE_brezgrafike.png";
+    import ozadjepagecomp from "../assets/SPLETNA_GRAFIKA_OZADJE_brezgrafike - Copy-min.png";
     import spotify from "../assets/Spotify.png";
     import apple from "../assets/Apple Music.png";
     import tiktok from "../assets/TikTok.png";
@@ -7,7 +8,7 @@
 </script>
 
 <div>
-    <div class="space" style="background-image: url('{ozadjepage}');">
+    <div class="space" style="background-image: url('{ozadjepagecomp}');">
         <div>
             <p class="text">SOON AVALIABLE ON ALL PLATFORMS</p>
             <div class="linki">
@@ -30,7 +31,6 @@
         justify-content: center;
     }
     .space {
-        
         display: flex;
         justify-content: center;
         align-items: center;
