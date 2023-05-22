@@ -1,7 +1,7 @@
 <script>
     //import slikaozadnje from "../assets/SPLETNA_GRAFIKA_OZADJE_siroko 1.png";
     //import slikaozadnjecomp from "../assets/SPLETNA_GRAFIKA_OZADJE_siroko 1 - Copy-min.png";
-    import slikaozadnjecomp2 from "../assets/SPLETNA_GRAFIKA_OZADJE_siroko 1 - Copy-min-min.png";
+    import slikaozadnjecomp2 from "../assets/SPLETNA_GRAFIKA_OZADJE_siroko 1 - Copy-min-min.webp";
     import slikatestcomp2 from "../assets/SPLETNA_GRAFIKA_OZADJE_siroko 1 - Copy.webp"
     import magnanapis from "../assets/MAGNA_LOGO_PROFFESIONAL.png";
     import linkig from "../assets/iglink.png";
