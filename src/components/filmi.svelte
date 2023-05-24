@@ -15,11 +15,8 @@
     import Film6mobi from "../assets/Slika6mobi.webp";
 
     import LIK from "../assets/Y2Mate.is - EZRA - Lik! (Official Video)-30UzCpFOdco-720p-1656378123642.mp4";
-    
 
-    import VideoPlayer from './video/videowraper.svelte';
-    
-
+    import VideoPlayer from "./video/videowraper.svelte";
 </script>
 
 <div class="outline">
@@ -28,21 +25,24 @@
     </div>
     <div class="box">
         <div class="container">
-
-            <VideoPlayer slika={Film1} video={LIK} />
-            <img class="slikafilm" src={Film2} alt="bb" loading="lazy" />
-            <img class="slikafilm" src={Film3} alt="bb" loading="lazy" />
-            <img class="slikafilm" src={Film4} alt="bb" loading="lazy" />
+            <div class="slikepc">
+                <VideoPlayer slika={Film1} video={LIK} />
+                
+            </div>
+            <img class="slikafilm" src={Film2} alt="bb" />
+            <img class="slikafilm" src={Film3} alt="bb" />
+            <img class="slikafilm" src={Film4} alt="bb" />
             <img class="slikafilm" src={Film5} alt="bb" loading="lazy" />
             <img class="slikafilm" src={Film6} alt="bb" loading="lazy" />
 
-            <div class="slikafilmobi">
- 
+            <div class="slikemobi">
+                <VideoPlayer slika={Film1mobi} video={LIK} />
+                
             </div>
-            <img class="slikafilmobi" src={Film1mobi} alt="bb" loading="lazy" />
-            <img class="slikafilmobi" src={Film2mobi} alt="bb" loading="lazy" />
-            <img class="slikafilmobi" src={Film3mobi} alt="bb" loading="lazy" />
-            <img class="slikafilmobi" src={Film4mobi} alt="bb" loading="lazy" />
+            
+            <img class="slikafilmobi" src={Film2mobi} alt="bb" />
+            <img class="slikafilmobi" src={Film3mobi} alt="bb" />
+            <img class="slikafilmobi" src={Film4mobi} alt="bb" />
             <img class="slikafilmobi" src={Film5mobi} alt="bb" loading="lazy" />
             <img class="slikafilmobi" src={Film6mobi} alt="bb" loading="lazy" />
         </div>
@@ -51,19 +51,12 @@
 </div>
 
 <style>
-
+    .slikemobi {
+        display: none;
+    }
     .slikafilmobi {
         display: none;
         max-width: 100%;
-    }
-    .slikafilm {
-        width: 100%;
-        opacity: 0.7;
-        transition: opacity 0.3s ease;
-    }
-
-    .slikafilm:hover {
-        opacity: 1;
     }
     .plac {
         width: 20px;
@@ -88,9 +81,21 @@
     .box {
         flex-grow: 1;
     }
+
+    .slikafilm {
+        width: 100%;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
     @media (max-width: 768px) {
         .space {
             display: none;
+        }
+        .slikepc{
+            display: none;
+        }
+        .slikemobi{
+            display: block;
         }
         .slikafilmobi {
             max-width: 100%;

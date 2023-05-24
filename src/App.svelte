@@ -70,4 +70,15 @@
 	.child {
 		scroll-snap-align: start;
 	}
+
+	@media (max-width: 768px) {
+		.container {
+			scroll-snap-type: none;
+			overflow-y: none;
+			height: 100vh;
+		}
+		.child {
+			scroll-snap-align: none;
+		}
+	}
 </style>
