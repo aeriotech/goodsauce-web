@@ -34,7 +34,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 531px;
+        height: 303px;
     }
     .text {
         position: relative;

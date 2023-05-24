@@ -1,0 +1,189 @@
+<script>
+    import { onMount } from "svelte";
+    //let video;
+    export let slika;
+    export let video;
+
+    let photoVisible = true;
+    let videoVisible = false;
+    /*
+    function handleClick() {
+        
+        video.play();
+    }*/
+
+    function handleClick() {
+        photoVisible = !photoVisible;
+        videoVisible = !videoVisible;
+
+        if (videoVisible) {
+            //const video = document.getElementById("video");
+            //video.play();
+        }
+    }
+
+    onMount(() => {
+        const video = document.getElementById("video");
+
+        video.addEventListener("click", function (event) {
+            event.stopPropagation();
+        });
+    });
+</script>
+
+<!--<div class="video-wrapper">
+    <button class="exit-button" on:click={handleClick}>
+        <span class="exit-icon" />
+    </button>
+    {#if videoVisible}
+        <video class="film" {src} id="video" controls />
+    {/if}
+</div>-->
+
+<div class="filmkontejnr">
+    {#if photoVisible}
+        <div class="photo-wrapper" on:click={handleClick}>
+            <img
+                class="slikafilm"
+                src={slika}
+                alt="bb"
+                loading="lazy"
+                on:click={handleClick}
+            />
+            <div class="overlay">
+                <button class="play-button">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                    >
+                        <path d="M22 14l28 18-28 18z" fill="#FFF" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    {/if}
+
+    {#if videoVisible}
+        <div class="video-wrapper">
+            <video class="film" src={video} id="video" controls autoplay />
+            <button class="exit-button" on:click={handleClick}>
+                <span class="exit-icon" />
+            </button>
+        </div>
+    {/if}
+</div>
+
+<style>
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .play-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border: none;
+        background: none;
+        color: #fff;
+        font-size: 32px;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .slikafilm {
+        width: 100%;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+    }
+
+    .slikafilm:hover {
+        opacity: 1;
+    }
+    .photo-wrapper {
+        position: relative;
+        width: 100%;
+    }
+    .photo-wrapper:hover .slikafilm {
+        opacity: 1;
+    }
+
+    .photo-wrapper:hover .overlay {
+        opacity: 1;
+    }
+    .filmkontejnr {
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+        overflow: hidden;
+    }
+    .film {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .video-wrapper {
+        position: relative;
+        width: 91%;
+        
+    }
+
+    .exit-icon {
+        width: 16px;
+        height: 16px;
+        border: 2px solid #fff;
+        transform: rotate(45deg);
+    }
+
+    .exit-icon::before,
+    .exit-icon::after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+    }
+
+    .exit-icon::before {
+        width: 2px;
+        height: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .exit-icon::after {
+        width: 16px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .exit-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 32px;
+        height: 32px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.4;
+    }
+    .exit-button:hover {
+        opacity: 1;
+        background-color: black;
+    }
+</style>

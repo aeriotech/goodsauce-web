@@ -13,31 +13,13 @@
     import Film4mobi from "../assets/Slika4mobi.webp";
     import Film5mobi from "../assets/Slika5mobi.webp";
     import Film6mobi from "../assets/Slika6mobi.webp";
+
     import LIK from "../assets/Y2Mate.is - EZRA - Lik! (Official Video)-30UzCpFOdco-720p-1656378123642.mp4";
+    
 
-    import { onMount } from "svelte";
-    //let video;
+    import VideoPlayer from './video/videowraper.svelte';
+    
 
-    let photoVisible = true;
-    let videoVisible = false;
-    /*
-    function handleClick() {
-        
-        video.play();
-    }*/
-
-    function handleClick() {
-        photoVisible = !photoVisible;
-        videoVisible = !videoVisible;
-    }
-
-    onMount(() => {
-        const video = document.getElementById("video");
-
-        video.addEventListener("click", function (event) {
-            event.stopPropagation();
-        });
-    });
 </script>
 
 <div class="outline">
@@ -46,23 +28,8 @@
     </div>
     <div class="box">
         <div class="container">
-            <div class="filmkontejnr">
-                {#if photoVisible}
-                    <!-- svelte-ignore a11y-click-events-have-key-events -->
-                    <img
-                        class="slikafilm"
-                        src={Film1}
-                        alt="bb"
-                        loading="lazy"
-                        on:click={handleClick}
-                    />
-                {/if}
 
-                {#if videoVisible}
-                    <video class="film" src={LIK} id="video" controls />
-                {/if}
-            </div>
-
+            <VideoPlayer slika={Film1} video={LIK} />
             <img class="slikafilm" src={Film2} alt="bb" loading="lazy" />
             <img class="slikafilm" src={Film3} alt="bb" loading="lazy" />
             <img class="slikafilm" src={Film4} alt="bb" loading="lazy" />
@@ -70,22 +37,9 @@
             <img class="slikafilm" src={Film6} alt="bb" loading="lazy" />
 
             <div class="slikafilmobi">
-                {#if photoVisible}
-                    
-                    <img
-                        class="slikafilmobi"
-                        src={Film1mobi}
-                        alt="bb"
-                        loading="lazy"
-                        on:click={handleClick}
-                    />
-                {/if}
-
-                {#if videoVisible}
-                    <video class="slikafilmobi" src={LIK} id="video" controls />
-                {/if}
+ 
             </div>
-
+            <img class="slikafilmobi" src={Film1mobi} alt="bb" loading="lazy" />
             <img class="slikafilmobi" src={Film2mobi} alt="bb" loading="lazy" />
             <img class="slikafilmobi" src={Film3mobi} alt="bb" loading="lazy" />
             <img class="slikafilmobi" src={Film4mobi} alt="bb" loading="lazy" />
@@ -97,23 +51,19 @@
 </div>
 
 <style>
-    .film {
-        margin: 20px;
-        width: 100%;
-        height: 800px;
-    }
-    .filmkontejnr{
-        max-width: 100%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
+
     .slikafilmobi {
         display: none;
         max-width: 100%;
     }
     .slikafilm {
         width: 100%;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+    }
+
+    .slikafilm:hover {
+        opacity: 1;
     }
     .plac {
         width: 20px;
