@@ -1,21 +1,21 @@
 <script>
     import levitrak from "../assets/levateste.png";
     import desnitrak from "../assets/DESNATEST.png";
-    import Film1 from "../assets/Slika1-min.png";
+    import Film1 from "../assets/newpic/NORMALsLIKA_1-min.png";
     import Film2 from "../assets/Slika2-min.png";
     import Film3 from "../assets/Slika3-min.png";
     import Film4 from "../assets/Slika4-min.png";
     import Film5 from "../assets/Slika5-min.png";
     import Film6 from "../assets/Slika6-min.png";
-    import Film1mobi from "../assets/Slika1mobi.webp";
-    import Film2mobi from "../assets/Slika2mobi.webp";
-    import Film3mobi from "../assets/Slika3mobi.webp";
-    import Film4mobi from "../assets/Slika4mobi.webp";
-    import Film5mobi from "../assets/Slika5mobi.webp";
-    import Film6mobi from "../assets/Slika6mobi.webp";
+    import Film1mobi from "../assets/newpic/NORMALsLIKA_1-min.webp";
+    import Film2mobi from "../assets/newpic/Slika2-2.webp";
+    import Film3mobi from "../assets/newpic/Slika3-2.webp";
+    import Film4mobi from "../assets/newpic/Slika4-1.webp";
+    import Film5mobi from "../assets/newpic/Slika5-1.webp";
+    import Film6mobi from "../assets/newpic/Slika6-1.webp";
 
     import LIK from "../assets/Y2Mate.is - EZRA - Lik! (Official Video)-30UzCpFOdco-720p-1656378123642.mp4";
-
+    import TREJLR from "../assets/Y2Mate.is - EZRA - GOOD SAUCE (OFFICIAL TRAILER)-r5InmsO96TY-1080p-1655860415849.mp4";
     import VideoPlayer from "./video/videowraper.svelte";
 </script>
 
@@ -26,7 +26,7 @@
     <div class="box">
         <div class="container">
             <div class="slikepc">
-                <VideoPlayer slika={Film1} video={LIK} />
+                <VideoPlayer slika={Film1} video={TREJLR} />
                 
             </div>
             <img class="slikafilm" src={Film2} alt="bb" />
@@ -36,7 +36,7 @@
             <img class="slikafilm" src={Film6} alt="bb" loading="lazy" />
 
             <div class="slikemobi">
-                <VideoPlayer slika={Film1mobi} video={LIK} />
+                <VideoPlayer slika={Film1mobi} video={TREJLR} />
                 
             </div>
             

@@ -64,6 +64,7 @@
         <div class="photo-wrapper">
             <img class="slikafilm" src={slika} alt="bb" />
             <div class="overlay">
+                <!--<p class="play">PLAY</p>-->
                 <button class="play-button" on:click={handleClick}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +72,7 @@
                         height="64"
                         viewBox="0 0 64 64"
                     >
-                        <path d="M22 14l28 18-28 18z" fill="#FFF" />
+                        <path d="M22 14l28 18-28 18z" fill="#292222" />
                     </svg>
                 </button>
             </div>
@@ -89,6 +90,9 @@
 </div>
 
 <style>
+    .play {
+        display: none;
+    }
     .overlay {
         position: absolute;
         top: 50%;
@@ -96,6 +100,8 @@
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: opacity 0.3s ease;
+        justify-content: center;
+        align-items: center;
     }
 
     .play-button {
@@ -116,20 +122,25 @@
     .slikafilm {
         width: 100%;
         opacity: 1;
+        transition: opacity 0.4s ease;
     }
 
     .slikafilm:hover {
         opacity: 0.7;
+        transition: opacity 0.3s ease;
     }
 
     .photo-wrapper {
         position: relative;
         width: 100%;
         overflow: hidden;
+        opacity: 1;
+        transition: opacity 1s ease;
     }
 
     .photo-wrapper:hover .slikafilm {
         opacity: 0.7;
+        transition: opacity 0.7s ease;
     }
 
     .photo-wrapper:hover .overlay {
@@ -153,13 +164,13 @@
     }
     .video-wrapper {
         position: relative;
-        width: 91%;
+        width: 100%;
     }
 
     .exit-icon {
         width: 16px;
         height: 16px;
-        
+
         transform: rotate(45deg);
     }
 
@@ -221,7 +232,7 @@
         }
 
         .photo-wrapper .overlay {
-            opacity: 0.5;
+            opacity: 1;
         }
         .exit-button {
             position: absolute;
@@ -267,6 +278,41 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+        .overlay {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .play-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            border: none;
+            background: none;
+            color: #292222;
+            font-size: 32px;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .play {
+            font-size: 4px;
+            font-family: "Mersad", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            color: #ffffff;
+            position: absolute;
+            display: flex;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
         }
     }
 </style>
