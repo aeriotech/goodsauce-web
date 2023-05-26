@@ -13,10 +13,7 @@
     import Film4mobi from "../assets/newpic/Slika4-1.webp";
     import Film5mobi from "../assets/newpic/Slika5-1.webp";
     import Film6mobi from "../assets/newpic/Slika6-1.webp";
-
-    //import LIK from "../assets/Y2Mate.is - EZRA - Lik! (Official Video)-30UzCpFOdco-720p-1656378123642.mp4";
-    //import TREJLR from "../assets/Y2Mate.is - EZRA - GOOD SAUCE (OFFICIAL TRAILER)-r5InmsO96TY-1080p-1655860415849.mp4";
-    //import TORERO from "../assets/newpic/1_GS_TORERO_FINAL.mp4" 
+    import TORERO from "../assets/newpic/1_GS_TORERO_FINAL.mp4" 
 
     import VideoPlayer from "./video/videowraper.svelte";
 </script>
