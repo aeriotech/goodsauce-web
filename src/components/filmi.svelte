@@ -13,7 +13,7 @@
     import Film4mobi from "../assets/newpic/Slika4-1.webp";
     import Film5mobi from "../assets/newpic/Slika5-1.webp";
     import Film6mobi from "../assets/newpic/Slika6-1.webp";
-    //import TORERO from "../assets/newpic/1_GS_TORERO_FINAL.mp4" 
+    const TORERO = "https://cdn.magnadogsworldwide.com/thesauce/torero.mp4" 
 
     import VideoPlayer from "./video/videowraper.svelte";
 </script>
