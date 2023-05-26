@@ -27,7 +27,10 @@
                     ><img class="slikalink" src={tiktok} alt="bb" /></a
                 >
 
-                <img class="slikalink" src={youtube} alt="bb" />
+                
+                <a href=""
+                    ><img class="slikalink" src={youtube} alt="bb" /></a
+                >
 
                 <a href="https://deezer.page.link/KBTXJiR49CZ4SGi96"
                     ><img class="slikalink" src={deezer} alt="bb" /></a
