@@ -30,7 +30,7 @@
     <div class="box">
         <div class="container">
             <div class="slikepc">
-                <VideoPlayer slika={Film1} video={TORERO} />
+                <VideoPlayer slika={Film1} video={TREJLR} />
                 
             </div>
             <img class="slikafilm" src={Film2} alt="bb" />
@@ -40,7 +40,7 @@
             <img class="slikafilm" src={Film6} alt="bb" loading="lazy" />
 
             <div class="slikemobi">
-                <VideoPlayer slika={Film1mobi} video={TORERO} />
+                <VideoPlayer slika={Film1mobi} video={TREJLR} />
                 
             </div>
             
