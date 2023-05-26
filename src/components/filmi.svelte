@@ -62,6 +62,7 @@
     }
     .space {
         width: 38px;
+        
     }
     .outline {
         display: flex;
@@ -81,6 +82,11 @@
         flex-grow: 1;
     }
 
+    .slikepc{
+        width: 100%;
+        
+        
+    }
     .slikafilm {
         width: 100%;
         opacity: 1;

@@ -72,6 +72,16 @@
                         height="64"
                         viewBox="0 0 64 64"
                     >
+                        <path d="M22 14l28 18-28 18z" fill="#fff" />
+                    </svg>
+                </button>
+                <button class="play-button-mobile" on:click={handleClick}>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                    >
                         <path d="M22 14l28 18-28 18z" fill="#292222" />
                     </svg>
                 </button>
@@ -90,6 +100,19 @@
 </div>
 
 <style>
+    .play-button-mobile {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border: none;
+        background: none;
+        color: #292222;
+        font-size: 32px;
+        opacity: 0.5;
+        cursor: pointer;
+    }
     .play {
         display: none;
     }
@@ -114,7 +137,7 @@
         background: none;
         color: #fff;
         font-size: 32px;
-        opacity: 0.8;
+        opacity: 1;
         cursor: pointer;
 
         transition: 300ms linear all;
@@ -219,6 +242,21 @@
         transition: 300ms linear all;
     }
     @media (max-width: 768px) {
+        .play-button {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            border: none;
+            background: none;
+            color: #fff;
+            font-size: 32px;
+            opacity: 1;
+            cursor: pointer;
+
+            transition: 300ms linear all;
+        }
         .photo-wrapper .slikafilm {
             opacity: 1;
             max-width: 100%;
@@ -289,7 +327,7 @@
             justify-content: center;
             align-items: center;
         }
-        .play-button {
+        .play-button-mobile {
             display: flex;
             justify-content: center;
             align-items: center;
