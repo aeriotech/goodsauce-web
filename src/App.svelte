@@ -18,19 +18,7 @@
 </script>
 
 <main>
-	<!--<div class="container">
-		<section class="child">
-			<Header />
-		</section>
-		<section class="child">
-			<Filmi />
-		</section>
-		<section class="child">
-			<Linki />
-			<Magna />
-			<Footer />
-		</section>
-	</div>-->
+	
 
 	<div class="container">
 		<section class="child">
