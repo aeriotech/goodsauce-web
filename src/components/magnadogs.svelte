@@ -1,7 +1,7 @@
 <script>
     import bimagna from "../assets/MAGNAWEBTEST.png";
     //import parnerji from "../assets/sponsorji1 1.png";
-    import parnerjiw from "../assets/sponsorji1white.png";
+    import parnerjiw from "../assets/newsponzorji.png";
 </script>
 
 <div>
@@ -23,7 +23,8 @@
         width: 372px;
     }
     .slikasponzor {
-        width: 1144px;
+        margin-top: 10px;
+        width: 980px;
     }
     .parnerji {
         display: flex;

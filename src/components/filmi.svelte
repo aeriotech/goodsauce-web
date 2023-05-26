@@ -1,22 +1,22 @@
 <script>
     import levitrak from "../assets/levateste.png";
     import desnitrak from "../assets/DESNATEST.png";
-    import Film1 from "../assets/Slika1-min.png";
+    import Film1 from "../assets/newpic/NORMALsLIKA_1-min.png";
     import Film2 from "../assets/Slika2-min.png";
     import Film3 from "../assets/Slika3-min.png";
     import Film4 from "../assets/Slika4-min.png";
     import Film5 from "../assets/Slika5-min.png";
     import Film6 from "../assets/Slika6-min.png";
-    import Film1mobi from "../assets/Slika1mobi.webp";
-    import Film2mobi from "../assets/Slika2mobi.webp";
-    import Film3mobi from "../assets/Slika3mobi.webp";
-    import Film4mobi from "../assets/Slika4mobi.webp";
-    import Film5mobi from "../assets/Slika5mobi.webp";
-    import Film6mobi from "../assets/Slika6mobi.webp";
+    import Film1mobi from "../assets/newpic/NORMALsLIKA_1-min.webp";
+    import Film2mobi from "../assets/newpic/Slika2-2.webp";
+    import Film3mobi from "../assets/newpic/Slika3-2.webp";
+    import Film4mobi from "../assets/newpic/Slika4-1.webp";
+    import Film5mobi from "../assets/newpic/Slika5-1.webp";
+    import Film6mobi from "../assets/newpic/Slika6-1.webp";
+    const TORERO = "https://cdn.magnadogsworldwide.com/thesauce/torero.mp4" 
 
+    import VideoPlayer from "./video/videowraper.svelte";
 </script>
-
-
 
 <div class="outline">
     <div class="space" style="background-image: url('{levitrak}');">
@@ -24,30 +24,37 @@
     </div>
     <div class="box">
         <div class="container">
-            <img class="slikafilm" src={Film1} alt="bb" loading="lazy" />
-            <img class="slikafilm" src={Film2} alt="bb" loading="lazy"/>
-            <img class="slikafilm" src={Film3} alt="bb" loading="lazy"/>
-            <img class="slikafilm" src={Film4} alt="bb" loading="lazy"/>
-            <img class="slikafilm" src={Film5} alt="bb" loading="lazy"/>
-            <img class="slikafilm" src={Film6} alt="bb" loading="lazy"/>
+            <div class="slikepc">
+                <VideoPlayer slika={Film1} video={TORERO} />
+                
+            </div>
+            <img class="slikafilm" src={Film2} alt="bb" />
+            <img class="slikafilm" src={Film3} alt="bb" />
+            <img class="slikafilm" src={Film4} alt="bb" />
+            <img class="slikafilm" src={Film5} alt="bb" loading="lazy" />
+            <img class="slikafilm" src={Film6} alt="bb" loading="lazy" />
 
-            <img class="slikafilmobi" src={Film1mobi} alt="bb" loading="lazy"/>
-            <img class="slikafilmobi" src={Film2mobi} alt="bb" loading="lazy"/>
-            <img class="slikafilmobi" src={Film3mobi} alt="bb" loading="lazy"/>
-            <img class="slikafilmobi" src={Film4mobi} alt="bb" loading="lazy"/>
-            <img class="slikafilmobi" src={Film5mobi} alt="bb" loading="lazy"/>
-            <img class="slikafilmobi" src={Film6mobi} alt="bb" loading="lazy"/>
+            <div class="slikemobi">
+                <VideoPlayer slika={Film1mobi} video={TORERO} />
+                
+            </div>
+            
+            <img class="slikafilmobi" src={Film2mobi} alt="bb" />
+            <img class="slikafilmobi" src={Film3mobi} alt="bb" />
+            <img class="slikafilmobi" src={Film4mobi} alt="bb" />
+            <img class="slikafilmobi" src={Film5mobi} alt="bb" loading="lazy" />
+            <img class="slikafilmobi" src={Film6mobi} alt="bb" loading="lazy" />
         </div>
     </div>
     <div class="space" style="background-image: url('{desnitrak}');" />
 </div>
 
 <style>
+    .slikemobi {
+        display: none;
+    }
     .slikafilmobi {
         display: none;
-        max-width: 100%;
-    }
-    .slikafilm {
         max-width: 100%;
     }
     .plac {
@@ -73,9 +80,21 @@
     .box {
         flex-grow: 1;
     }
+
+    .slikafilm {
+        width: 100%;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
     @media (max-width: 768px) {
         .space {
             display: none;
+        }
+        .slikepc{
+            display: none;
+        }
+        .slikemobi{
+            display: block;
         }
         .slikafilmobi {
             max-width: 100%;

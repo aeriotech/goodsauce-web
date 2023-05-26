@@ -1,16 +1,12 @@
 <script>
-    //import mrmagna from "../assets/magndadogs_MERCH_DROP_napis.png";
+    
 </script>
 
 <div>
     <div class="space">
         <p class="text">© Copyright 2023 - All Rights Reserved by MAGNA DOGS</p>
     </div>
-    <!-- <div class="space">
-        <div>
-            <img class="magnanapis" src={mrmagna} alt="bb" />
-        </div>
-    </div>-->
+    
 </div>
 
 <style>
