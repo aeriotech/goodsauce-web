@@ -6,7 +6,7 @@
     import tiktok from "../assets/TikTok.png";
     import youtube from "../assets/Youtube.png";
     import deezer from "../assets/newpic/DEEZER.png";
-    import tidle from "../assets/newpic/TIDLE.png";
+    //import tidle from "../assets/newpic/TIDLE.png";
 </script>
 
 <div>
@@ -27,17 +27,12 @@
                     ><img class="slikalink" src={tiktok} alt="bb" /></a
                 >
 
-                
-                <a href=""
+                <a href="https://youtu.be/5U5M5qLWYQs"
                     ><img class="slikalink" src={youtube} alt="bb" /></a
                 >
 
                 <a href="https://deezer.page.link/KBTXJiR49CZ4SGi96"
                     ><img class="slikalink" src={deezer} alt="bb" /></a
-                >
-
-                <a href=""
-                    ><img class="slikalink" src={tidle} alt="bb" /></a
                 >
             </div>
         </div>
