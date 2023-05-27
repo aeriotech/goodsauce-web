@@ -176,7 +176,7 @@
         justify-content: center;
         align-items: center;
         display: flex;
-        flex-grow: 1;
+        
         overflow: hidden;
     }
 

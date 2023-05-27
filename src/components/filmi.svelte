@@ -13,7 +13,7 @@
     import Film4mobi from "../assets/newpic/Slika4-1.webp";
     import Film5mobi from "../assets/newpic/Slika5-1.webp";
     import Film6mobi from "../assets/newpic/Slika6-1.webp";
-    const TORERO = "https://cdn.magnadogsworldwide.com/thesauce/torero.mp4" 
+    const TORERO = "https://cdn.magnadogsworldwide.com/thesauce/torero.mp4";
 
     import VideoPlayer from "./video/videowraper.svelte";
 </script>
@@ -26,7 +26,6 @@
         <div class="container">
             <div class="slikepc">
                 <VideoPlayer slika={Film1} video={TORERO} />
-                
             </div>
             <img class="slikafilm" src={Film2} alt="bb" />
             <img class="slikafilm" src={Film3} alt="bb" />
@@ -36,9 +35,8 @@
 
             <div class="slikemobi">
                 <VideoPlayer slika={Film1mobi} video={TORERO} />
-                
             </div>
-            
+
             <img class="slikafilmobi" src={Film2mobi} alt="bb" />
             <img class="slikafilmobi" src={Film3mobi} alt="bb" />
             <img class="slikafilmobi" src={Film4mobi} alt="bb" />
@@ -46,10 +44,17 @@
             <img class="slikafilmobi" src={Film6mobi} alt="bb" loading="lazy" />
         </div>
     </div>
-    <div class="space" style="background-image: url('{desnitrak}');" />
+
+    <div class="space" style="background-image: url('{desnitrak}');">
+        <div class="plac" />
+    </div>
 </div>
 
 <style>
+    .pad {
+        width: 38px;
+    }
+
     .slikemobi {
         display: none;
     }
@@ -62,7 +67,6 @@
     }
     .space {
         width: 38px;
-        
     }
     .outline {
         display: flex;
@@ -82,10 +86,10 @@
         flex-grow: 1;
     }
 
-    .slikepc{
+    .slikepc {
         width: 100%;
-        
-        
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .slikafilm {
         width: 100%;
@@ -96,10 +100,10 @@
         .space {
             display: none;
         }
-        .slikepc{
+        .slikepc {
             display: none;
         }
-        .slikemobi{
+        .slikemobi {
             display: block;
         }
         .slikafilmobi {
