@@ -2,18 +2,20 @@
     import levitrak from "../assets/levateste.png";
     import desnitrak from "../assets/DESNATEST.png";
     import Film1 from "../assets/newpic/NORMALsLIKA_1-min.png";
-    import Film2 from "../assets/Slika2-min.png";
-    import Film3 from "../assets/Slika3-min.png";
+    import Film2 from "../assets/newpic/3-min.png";
+    import Film3 from "../assets/newpic/Slika3udadajtan-min.png";
     import Film4 from "../assets/Slika4-min.png";
     import Film5 from "../assets/Slika5-min.png";
     import Film6 from "../assets/Slika6-min.png";
     import Film1mobi from "../assets/newpic/NORMALsLIKA_1-min.webp";
-    import Film2mobi from "../assets/newpic/Slika2-2.webp";
-    import Film3mobi from "../assets/newpic/Slika3-2.webp";
+    import Film2mobi from "../assets/newpic/3-min.webp";
+    import Film3mobi from "../assets/newpic/Slika3updejtan-min.webp";
     import Film4mobi from "../assets/newpic/Slika4-1.webp";
     import Film5mobi from "../assets/newpic/Slika5-1.webp";
     import Film6mobi from "../assets/newpic/Slika6-1.webp";
     const TORERO = "https://cdn.magnadogsworldwide.com/thesauce/torero.mp4";
+    const SUNLIGHT = "https://cdn.magnadogsworldwide.com/thesauce/sunlight.mp4";
+    const LMK = "https://cdn.magnadogsworldwide.com/thesauce/2_GS_LMK_FINAL.mp4";
 
     import VideoPlayer from "./video/videowraper.svelte";
 </script>
@@ -27,7 +29,10 @@
             <div class="slikepc">
                 <VideoPlayer slika={Film1} video={TORERO} />
             </div>
-            <img class="slikafilm" src={Film2} alt="bb" />
+            <div class="slikepc">
+                <VideoPlayer slika={Film2} video={LMK} />
+            </div>
+
             <img class="slikafilm" src={Film3} alt="bb" />
             <img class="slikafilm" src={Film4} alt="bb" />
             <img class="slikafilm" src={Film5} alt="bb" loading="lazy" />
@@ -36,8 +41,10 @@
             <div class="slikemobi">
                 <VideoPlayer slika={Film1mobi} video={TORERO} />
             </div>
+            <div class="slikemobi">
+                <VideoPlayer slika={Film2mobi} video={LMK} />
+            </div>
 
-            <img class="slikafilmobi" src={Film2mobi} alt="bb" />
             <img class="slikafilmobi" src={Film3mobi} alt="bb" />
             <img class="slikafilmobi" src={Film4mobi} alt="bb" />
             <img class="slikafilmobi" src={Film5mobi} alt="bb" loading="lazy" />

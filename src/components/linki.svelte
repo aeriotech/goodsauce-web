@@ -15,23 +15,23 @@
             <p class="text">AVALIABLE ON ALL PLATFORMS</p>
             <div class="linki">
                 <a
-                    href="https://open.spotify.com/track/4Nym0pHaQ8RM28lA9Q1suJ?si=9fc1397c507f4aba"
+                    href="https://open.spotify.com/album/33BA3gHO2E05tAWY20ZTNS?si=4A7-MCsQS3ePQ-B6OKL7Lw"
                     ><img class="slikalink" src={spotify} alt="bb" /></a
                 >
                 <a
-                    href="https://music.apple.com/si/album/torero/1688238226?i=1688238239"
+                    href="https://music.apple.com/si/album/lmk-single/1688443267"
                     ><img class="slikalink" src={apple} alt="bb" /></a
                 >
                 <a
-                    href="https://www.tiktok.com/music/Torero-7236270306096252930?is_from_webapp=1&sender_device=pc"
+                    href="https://www.tiktok.com/@magnadogsworldwide"
                     ><img class="slikalink" src={tiktok} alt="bb" /></a
                 >
 
-                <a href="https://youtu.be/5U5M5qLWYQs"
+                <a href="https://www.youtube.com/@worldwidezra/videos"
                     ><img class="slikalink" src={youtube} alt="bb" /></a
                 >
 
-                <a href="https://deezer.page.link/KBTXJiR49CZ4SGi96"
+                <a href="https://deezer.page.link/euqsodqS3L2xv2ah9"
                     ><img class="slikalink" src={deezer} alt="bb" /></a
                 >
             </div>
