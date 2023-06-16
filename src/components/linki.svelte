@@ -15,11 +15,11 @@
             <p class="text">AVALIABLE ON ALL PLATFORMS</p>
             <div class="linki">
                 <a
-                    href="https://open.spotify.com/album/33BA3gHO2E05tAWY20ZTNS?si=4A7-MCsQS3ePQ-B6OKL7Lw"
+                    href="https://open.spotify.com/album/1Iu1NEi9uaNJUbh3oi8QmG?si=hlrL5YxYQ_CLjYIn3JctWw"
                     ><img class="slikalink" src={spotify} alt="bb" /></a
                 >
                 <a
-                    href="https://music.apple.com/si/album/lmk-single/1688443267"
+                    href="https://music.apple.com/si/album/good-sauce-ep/1692316478"
                     ><img class="slikalink" src={apple} alt="bb" /></a
                 >
                 <a
@@ -31,7 +31,7 @@
                     ><img class="slikalink" src={youtube} alt="bb" /></a
                 >
 
-                <a href="https://deezer.page.link/euqsodqS3L2xv2ah9"
+                <a href="https://deezer.page.link/8zYtgxwZx7TDrvKx9"
                     ><img class="slikalink" src={deezer} alt="bb" /></a
                 >
             </div>
