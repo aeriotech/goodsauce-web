@@ -16,7 +16,7 @@
     const TORERO = "https://cdn.magnadogsworldwide.com/thesauce/torero.mp4";
     const SUNLIGHT = "https://cdn.magnadogsworldwide.com/thesauce/sunlight.mp4"; 
     const LMK = "https://cdn.magnadogsworldwide.com/thesauce/2_GS_LMK_FINAL.mp4";
-    const BYEBYE = "https://cdn.magnadogsworldwide.com/thesauce/4_GOODSAUCE_BYEBYE_FINAL.mp4"
+    const BYEBYE = "https://cdn.magnadogsworldwide.com/thesauce/4_GS_BYEBYE_FINAL.mp4"
 
     import VideoPlayer from "./video/videowraper.svelte";
 </script>
