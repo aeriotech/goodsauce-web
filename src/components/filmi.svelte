@@ -5,18 +5,21 @@
     import Film2 from "../assets/newpic/3-min.png";
     import Film3 from "../assets/newpic/2-min.png";
     import Film4 from "../assets/newpic/4-min.png";
-    import Film5 from "../assets/Slika5-min.png";
+    import Film5 from "../assets/newpic/5-min.png";
     import Film6 from "../assets/Slika6-min.png";
     import Film1mobi from "../assets/newpic/NORMALsLIKA_1-min.webp";
     import Film2mobi from "../assets/newpic/3-min.webp";
     import Film3mobi from "../assets/newpic/2-min.webp";
     import Film4mobi from "../assets/newpic/4-min.webp";
-    import Film5mobi from "../assets/newpic/Slika5-1.webp";
+    import Film5mobi from "../assets/newpic/5-min.webp";
     import Film6mobi from "../assets/newpic/Slika6-1.webp";
     const TORERO = "https://cdn.magnadogsworldwide.com/thesauce/torero.mp4";
-    const SUNLIGHT = "https://cdn.magnadogsworldwide.com/thesauce/sunlight.mp4"; 
-    const LMK = "https://cdn.magnadogsworldwide.com/thesauce/2_GS_LMK_FINAL.mp4";
-    const BYEBYE = "https://cdn.magnadogsworldwide.com/thesauce/4_GS_BYEBYE_FINAL.mp4"
+    const SUNLIGHT = "https://cdn.magnadogsworldwide.com/thesauce/sunlight.mp4";
+    const LMK =
+        "https://cdn.magnadogsworldwide.com/thesauce/2_GS_LMK_FINAL.mp4";
+    const BYEBYE =
+        "https://cdn.magnadogsworldwide.com/thesauce/4_GS_BYEBYE_FINAL.mp4";
+    const SOARIN = "https://cdn.magnadogsworldwide.com/thesauce/5_SOARIN.mp4";
 
     import VideoPlayer from "./video/videowraper.svelte";
 </script>
@@ -39,8 +42,10 @@
             <div class="slikepc">
                 <VideoPlayer slika={Film4} video={BYEBYE} />
             </div>
+            <div class="slikepc">
+                <VideoPlayer slika={Film5} video={SOARIN} />
+            </div>
 
-            <img class="slikafilm" src={Film5} alt="bb" loading="lazy" />
             <img class="slikafilm" src={Film6} alt="bb" loading="lazy" />
 
             <div class="slikemobi">
@@ -53,12 +58,15 @@
             <div class="slikemobi">
                 <VideoPlayer slika={Film3mobi} video={SUNLIGHT} />
             </div>
-            
+
             <div class="slikemobi">
                 <VideoPlayer slika={Film4mobi} video={BYEBYE} />
             </div>
 
-            <img class="slikafilmobi" src={Film5mobi} alt="bb" loading="lazy" />
+            <div class="slikemobi">
+                <VideoPlayer slika={Film5mobi} video={SOARIN} />
+            </div>
+
             <img class="slikafilmobi" src={Film6mobi} alt="bb" loading="lazy" />
         </div>
     </div>
