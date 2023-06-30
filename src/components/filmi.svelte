@@ -20,6 +20,8 @@
     const BYEBYE =
         "https://cdn.magnadogsworldwide.com/thesauce/4_GS_BYEBYE_FINAL.mp4";
     const SOARIN = "https://cdn.magnadogsworldwide.com/thesauce/5_SOARIN.mp4";
+    const EXPECTATIONS =
+        "https://cdn.magnadogsworldwide.com/thesauce/6_expectations.mp4";
 
     import VideoPlayer from "./video/videowraper.svelte";
 </script>
@@ -46,7 +48,9 @@
                 <VideoPlayer slika={Film5} video={SOARIN} />
             </div>
 
-            <img class="slikafilm" src={Film6} alt="bb" loading="lazy" />
+            <div class="slikepc">
+                <VideoPlayer slika={Film6} video={EXPECTATIONS} />
+            </div>
 
             <div class="slikemobi">
                 <VideoPlayer slika={Film1mobi} video={TORERO} />
@@ -67,7 +71,9 @@
                 <VideoPlayer slika={Film5mobi} video={SOARIN} />
             </div>
 
-            <img class="slikafilmobi" src={Film6mobi} alt="bb" loading="lazy" />
+            <div class="slikemobi">
+                <VideoPlayer slika={Film6mobi} video={EXPECTATIONS} />
+            </div>
         </div>
     </div>
 
