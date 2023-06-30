@@ -6,13 +6,13 @@
     import Film3 from "../assets/newpic/2-min.png";
     import Film4 from "../assets/newpic/4-min.png";
     import Film5 from "../assets/newpic/5-min.png";
-    import Film6 from "../assets/Slika6-min.png";
+    import Film6 from "../assets/newpic/6-min.png";
     import Film1mobi from "../assets/newpic/NORMALsLIKA_1-min.webp";
     import Film2mobi from "../assets/newpic/3-min.webp";
     import Film3mobi from "../assets/newpic/2-min.webp";
     import Film4mobi from "../assets/newpic/4-min.webp";
     import Film5mobi from "../assets/newpic/5-min.webp";
-    import Film6mobi from "../assets/newpic/Slika6-1.webp";
+    import Film6mobi from "../assets/newpic/6-min.webp";
     const TORERO = "https://cdn.magnadogsworldwide.com/thesauce/torero.mp4";
     const SUNLIGHT = "https://cdn.magnadogsworldwide.com/thesauce/sunlight.mp4";
     const LMK =
